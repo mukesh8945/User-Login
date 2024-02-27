@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+form {
+	background-color: #fff;
+	padding: 80px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="submit"] {
+	width: 110%;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #4caf50;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+p {
+	text-align: center;
+	margin-top: 20px;
+	color: #555;
+}
+
+p a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+	<form action="login" method="post">
+		<h1>Login</h1>
+		<div>
+			<label for="uname">USERNAME</label> <input type="text" id="uname"
+				name="uname">
+		</div>
+		<div>
+			<label for="pword">PASSWORD</label> <input type="password" id="pword"
+				name="pword">
+		</div>
+		<input type="submit" value="Login">
+		<p>
+			New user? <a href="register.html">Register here</a>.
+		</p>
+	</form>
+
+</body>
+
+</html>
